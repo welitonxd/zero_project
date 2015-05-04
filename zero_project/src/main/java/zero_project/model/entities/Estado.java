@@ -39,12 +39,12 @@ public class Estado implements Serializable{
         this.idEstado = idEstado;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeEstado() {
+        return nomeEstado;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeEstado(String nomeEstado) {
+        this.nomeEstado = nomeEstado;
     }
 
     public List<Endereco> getEnderecos() {
@@ -58,7 +58,7 @@ public class Estado implements Serializable{
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 23 * hash + (this.idEstado != null ? this.idEstado.hashCode() : 0);
+        hash = 43 * hash + (this.idEstado != null ? this.idEstado.hashCode() : 0);
         return hash;
     }
 
@@ -76,7 +76,6 @@ public class Estado implements Serializable{
         }
         return true;
     }
-    
     
     
 }
